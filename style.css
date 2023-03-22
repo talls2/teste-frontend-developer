@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  margin: 0;
+  font-family: "Inter", "Arial Narrow Bold", sans-serif;
+}
+
+.container {
+  margin: 20px 200px;
+}
+
+.intro {
+  display: flex;
+  background-image: url("./src/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.intro .container {
+  margin: 20px 200px;
+}
+.intro .container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro .container header img {
+  width: 150px;
+}
+.intro .container header .number {
+  background-color: #F8C477;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro .container .section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.intro .container .section1 h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.intro .container .section1 h1 span {
+  background-color: #f4ca33;
+}
+.intro .container .section1 p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.intro .container .section1 #title {
+  width: 60%;
+}
+.intro .container .section1 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  filter: blur(3px);
+  z-index: -1;
+  border-radius: 35px;
+  opacity: 0.5;
+}
+.intro .container .section1 .contact {
+  position: relative;
+  opacity: 0.5;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .container .section1 .contact .contact-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.intro .container .section1 .contact form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.intro .container .section1 .contact form input, .intro .container .section1 .contact form textarea {
+  margin: 1rem 0;
+  outline: none;
+  background: none;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  border-left: solid #683230;
+  background: #FFFFFF;
+}
+.intro .container .section1 .contact form #enviar {
+  background-color: #683230;
+  color: white;
+}
+
+.quem-somos, .servicos {
+  background-color: #f8c477;
+  display: flex;
+  color: #683230;
+}
+.quem-somos .container, .servicos .container {
+  display: flex;
+  margin: 20px 200px;
+}
+.quem-somos .container img, .servicos .container img {
+  width: 450px;
+}
+.quem-somos .container h1, .servicos .container h1 {
+  font-size: 45px;
+}
+.quem-somos .container p, .servicos .container p {
+  font-weight: 600;
+}
+
+.servicos {
+  background-color: #753513;
+  justify-content: center;
+}
+.servicos .serviceslist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicos .serviceslist .title {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+}
+.servicos .services {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #a96e3b;
+  border-radius: 50px;
+}
+.servicos .services h3 {
+  color: white;
+}
+.servicos .services .service {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+.servicos .services .service .icon {
+  margin: 30px;
+}
+.servicos .services .service img {
+  width: 60px;
+}
+
+.FAQ {
+  display: flex;
+  justify-content: center;
+  background-color: #f8c477;
+}
+.FAQ .title {
+  font-weight: 900;
+  font-size: 40px;
+  color: #753513;
+}
+.FAQ .perguntas {
+  display: flex;
+  flex-direction: column;
+}
+.FAQ .perguntas .pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #753513;
+  border-bottom: solid #753513;
+}
+
+/*# sourceMappingURL=style.css.map */
