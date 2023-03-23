@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
-  font-family: "Inter", "Arial Narrow Bold", sans-serif;
+  font-family: "Roboto", "Arial Narrow Bold", sans-serif;
 }
 
 .container {
@@ -43,6 +51,7 @@ body {
 .intro .container .section1 h1 {
   color: white;
   font-size: 60px;
+  font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
 .intro .container .section1 h1 span {
@@ -111,6 +120,7 @@ body {
 .quem-somos .container, .servicos .container {
   display: flex;
   margin: 20px 200px;
+  position: relative;
 }
 .quem-somos .container img, .servicos .container img {
   width: 450px;
@@ -120,14 +130,26 @@ body {
 }
 .quem-somos .container p, .servicos .container p {
   font-weight: 600;
+  text-align: justify;
+}
+.quem-somos .container #banana, .servicos .container #banana {
+  position: absolute;
+  width: 180px;
+  bottom: 210px;
+  left: -230px;
+  rotate: 40deg;
 }
 
 .servicos {
   background-color: #753513;
   justify-content: center;
 }
+.servicos .container {
+  margin: 20px 250px;
+}
 .servicos .serviceslist {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -136,6 +158,20 @@ body {
   color: white;
   font-family: Roboto;
   font-size: 40px;
+}
+.servicos .serviceslist #banana2 {
+  position: absolute;
+  width: 150px;
+  right: -190px;
+  top: -120px;
+  rotate: 130deg;
+}
+.servicos .serviceslist #banana3 {
+  position: absolute;
+  width: 110px;
+  left: -190px;
+  bottom: -100px;
+  rotate: 190deg;
 }
 .servicos .services {
   display: flex;
@@ -181,6 +217,62 @@ body {
   align-items: center;
   color: #753513;
   border-bottom: solid #753513;
+}
+
+.last {
+  background-color: #ffffff;
+}
+.last .container {
+  margin: 0 200px;
+}
+.last .container .wrapper {
+  display: flex;
+}
+.last .container .wrapper img {
+  width: 500px;
+}
+.last .container .wrapper .title {
+  width: 60%;
+  margin-top: 120px;
+}
+.last .container .wrapper .title h2 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #753513;
+}
+.last .container .wrapper .title p {
+  font-size: 20px;
+  color: #753513;
+}
+.last .container .wrapper .title button {
+  border: none;
+  filter: drop-shadow(0 0 0.15rem #683230);
+  background-color: #683230;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 35px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+footer {
+  display: flex;
+  background-color: #753513;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120px;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div p {
+  margin: 5px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
