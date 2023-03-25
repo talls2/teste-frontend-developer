@@ -91,4 +91,4 @@ As seguintes features foram adicionadas ao projeto:
 
 A partir do wireframe, desenvolvi a seguinte interface de usuário.
 
-![Template da página desenvolvida](https://raw.githubusercontent.com/talls2/teste-frontend-developer/master/images/projectfull.png)
+![Template da página desenvolvida](https://raw.githubusercontent.com/talls2/teste-frontend-developer/master/src/images/projectfull.png)
