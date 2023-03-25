@@ -1,0 +1,11 @@
+CREATE DATABASE dk_banana;
+USE dk_banana;
+
+CREATE TABLE messages (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  phone VARCHAR(20) NOT NULL,	
+  message VARCHAR(400) NOT NULL,
+  PRIMARY KEY (id)
+);

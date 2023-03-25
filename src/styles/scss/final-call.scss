@@ -1,0 +1,40 @@
+.last{
+
+    background-color: #ffffff;
+    .container{
+        margin: 0 200px;
+        .wrapper{
+            display: flex;
+            img{
+                width: 500px;
+            }
+        .title{
+            width: 60%;
+            margin-top: 120px;
+            h2{
+                font-weight: 900;
+                font-size: 40px;
+                color: #753513;
+            }
+            p{
+                font-size: 20px;
+                color: #753513;
+                margin-bottom: 75px;
+            }
+            a{
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                text-decoration: none;
+                border: none;
+                display: inline;
+                filter: drop-shadow(0 0 0.15rem #683230);
+                background-color: #683230;
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 15px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+            }
+    }}
+}}

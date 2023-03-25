@@ -1,0 +1,145 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    
+    
+    .container{
+        
+        
+        .section1{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 70px;
+            h1{
+                color: white;
+                font-size: 60px;
+                font-weight: 900;
+                font-family: 'Roboto', sans-serif;
+                margin: 0 0 15px 0;
+                span{
+                    background-color: #f4ca33;
+                }
+            }
+            p{
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 25px;
+
+            }
+            #title{
+                width: 60%;
+            }
+            #bananaBack1{
+                position: absolute;
+                width: 58px;
+                right: -25px;
+                top: -35px;
+                rotate: 40deg;
+                
+            }
+            #bananaBack2{
+                @extend #bananaBack1;
+                right: 20px;
+                top: 290px;
+                rotate: 20deg;
+                
+            }
+            #bananaBack3{
+                @extend #bananaBack1;
+                width: 42px;
+                right: 265px;
+                top: 240px;
+                rotate: 311deg;
+                
+            }
+
+            .contact{
+                position: relative;
+                width: 20rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                fieldset{
+                    background-color: rgba(255, 255, 255, 0.45);
+                    backdrop-filter: blur(1.5px);
+                    border: none;
+                    border-radius: 35px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 50px;
+                    legend{
+                        color: #FFFFFF;
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+                form{
+                    padding: 1rem;
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    input{
+                        font-family: 'Roboto';
+                        margin: 0.5rem 0;
+                        outline: none;
+                        padding: 10px;
+                        font-size: 15px;
+                        border: none;
+                        border-left: solid #683230;
+                        background-color: rgba(255, 255, 255, 0.35);
+                        width: 100%;
+                        
+                    }
+                    input::placeholder { 
+                        color: #fff;
+                        opacity: 1; 
+                      }
+                    textarea{
+                        @extend input;
+                    }
+                    button{
+                        background-color: #683230;
+                        cursor: pointer;
+                        font-family: "Roboto";
+                        font-size: 15px;
+                        color: white;
+                        height: 40px;
+                        border: none;
+                        margin-top: 10px;
+                        padding: 10px;
+                        width: 120px;
+                        box-shadow: 2px 4px 4px rgba(80, 38, 37, 0.35);
+                        border-radius: 6px;
+                        &:not(:disabled):hover {
+                            filter: brightness(130%);
+                          }
+                    
+                          &:disabled {
+                            opacity: 0.5;
+                            cursor: auto;
+                          }
+                    
+                          &:not(:disabled) {
+                            animation: pulse-blue 2s infinite;
+                          }
+                    }
+                    
+                }
+            }
+        
+            }
+
+        }
+    
+    }
+
+
+}

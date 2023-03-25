@@ -1,53 +1,94 @@
-# Teste para estágio Frontend e Full-Stack
+# Teste de Estágio (Ellos Design)
 
-## Sobre a Ellos Design
+<h2 id="introducao">Introdução</h2>
 
-A **Ellos Design** é uma agência de marketing e criação de sites localizada em Guarulhos / SP. Somos uma empresa em constante evolução e sempre estamos abertos para pessoas que gostem de tecnologia e queiram trabalhar na área, mas que principalmente queiram aprender e crescer com a nossa empresa.
+Resolução do teste da Ellos Design para vaga de estágio como desenvolvedor full-stack.
 
-## Sobre o teste
+Gostaria de iniciar dizendo que me diverti muito no desenvolvimento do projeto, encarando também como um desafio para mim mesmo, me tirando um pouco da zona de conforto em algumas situações, como por exemplo: Fazer o css "puro" com SASS quando consigo fazer Landing Pages muito mais rapidamente com frameworks CSS, de qualquer forma, obrigado pelo desafio!
 
-Este é um teste prático que desenvolvemos para a avaliação dos candidatos participantes de nosso processo seletivo para vagas de Frontend ou Full-Stack.
+Como exemplo, desenvolvi um site institucional para a empresa fictícia "DK banana's", a empresa do personagem fictício "Donkey Kong", com design baseado no [wireframe fornecido para o teste](https://github.com/rafaeldiehl/teste-frontend-developer/blob/master/design/wireframe.png).
 
-## Tecnologias para o desafio
+<h2 id="tecnologias">Tecnologias utilizadas</h2>
 
-Você deve utilizar as seguintes tecnologias para o desenvolvimento do teste:
+As tecnologias usados no projeto foram:
 
-- HTML5
-- CSS
-- JavaScript ou jQuery
-- PHP (Para Full-Stack)
-- MySQL (Para Full-Stack)
+<h3 id="frontend">Frontend</h3>
 
-## O que nos impressionaria no teste
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML);
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript);
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CDN);
+- [Sass](https://sass-lang.com).
 
-- Utilização de um pré-processador para o CSS (De preferência o Sass)
-- Aplicação de animações em CSS (Ex: Animações ao realizar scroll)
-- Ver o teste rodando em live (Bucket estático S3, Heroku, Firebase Hosting, etc)
-- Documentação do projeto (Com instruções para executar)
+<h3 id="backend">Backend</h3>
 
-## O que avaliaremos no seu teste
+- [PHP](https://www.php.net).
+- [MAMP](https://www.mamp.info/en/windows/).
 
-- Criatividade
-- Organização do código
-- Performance do código
-- Boas práticas de desenvolvimento
-- Documentação do código
-- Adaptação mobile (layout responsivo)
-- Documentação do projeto (Com instruções para executar)
+<h3 id="banco">Banco de Dados</h3>
 
-## Etapas para realização do teste
+- [MySQL](https://www.mysql.com).
 
-- Faça um [fork](https://github.com/Ellos-Design/teste-frontend-developer/fork) desse projeto em sua conta do GitHub
-- Realize o desafio proposto
-- Faça um push para seu repositório com o desafio implementado
-- Envie um email para (vagas@ellosdesign.com.br) com a URL do seu projeto avisando que você concluiu o teste
+<h3 id="ferramentas">Outras ferramentas</h3>
 
-## O desafio
+- [Git (Gerenciamento de versões)](https://git-scm.com);
+- [Github (Hospedagem do código)](https://github.com);
+- [Visual Studio Code (Editor de texto)](https://code.visualstudio.com);
+- [Font Awesome (Biblioteca de ícones gratuitos)](https://fontawesome.com);
+- [ESLint + Prettier (Padronização do código)](https://eslint.org).
+- [Figma (Design)](https://www.figma.com/).
 
-Você deverá desenvolver uma landing page seguindo a estrutura exibida na imagem abaixo. Você pode utilizar os textos e imagens de sua preferência para a criação da página.
+## Executando localmente
 
-#### Full-Stack
+Inicialmente, crie uma tabela no banco de dados com os seguintes comandos.
 
-Deixar o formulário da landing page funcional, onde ao preencher as informações e clicar para enviar, o formulário será submetido e os dados deverão ser gravados em um banco de dados (Neste caso será necessário nos enviar o arquivo SQL para podermos implementar o banco para avaliação do teste).
+```sql
+-- Caso não possua um banco, crie-o.
+CREATE DATABASE dk_banana;
+USE dk_banana;
 
-![Template da página a ser desenvolvida](https://github.com/Ellos-Design/teste-frontend-developer/blob/master/wireframe.png?raw=true)
+-- Tabela que armazenará as mensagens dos usuários
+CREATE TABLE messages
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  message VARCHAR(400) NOT NULL,
+  PRIMARY KEY (id)
+);
+```
+
+Em seguida configure seus dados a partir da linha 10 do arquivo `index.php`.
+
+```php
+...
+
+$user = "root"; // usuário
+$password = "root"; // senha
+$db = "dk_banana"; // nome do banco
+
+...
+```
+
+Após as configurações e a criação da tabela, utilize um servidor web para acessar o arquivo index.php (Utilizei o MAMP durante o desenvolvimento)
+
+### Editando os Estilos
+
+A estilização do projeto foi feita usando o pré-processador Sass. Os arquivos estão modularizados no diretório `./styles/sass`, divididos em categorias importadas no arquivo `main.scss`.
+
+Para processar o Sass, utilizei a extensão do Visual Studio Code [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass).
+
+<h2 id="features">Features</h2>
+
+As seguintes features foram adicionadas ao projeto:
+
+- Responsividade (tanto para mobile quanto para dispositivos excessivamente grandes);
+- Animações CSS (revelar no scroll, pulsão, girar);
+- Deploy do PHP na Heroku;
+- Máscara para input de telefone (padrão brasileiro);
+
+<h2 id="design">Design</h2>
+
+A partir do wireframe, desenvolvi a seguinte interface de usuário.
+
+![Template da página desenvolvida](https://raw.githubusercontent.com/talls2/teste-frontend-developer/master/images/projectfull.png)

@@ -1,0 +1,18 @@
+.toTopButton{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #683230;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    -webkit-animation: pulse-blue 2s infinite;
+    animation: pulse-blue 2s infinite;
+    transition: .4s;
+}

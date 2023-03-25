@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 400px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header img {
+  width: 200px;
+}
+header .number {
+  background-color: #965e48;
+  color: #ffffff;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+header .number i {
+  margin-right: 5px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.intro .container .section1 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.intro .container .section1 h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 15px 0;
+}
+.intro .container .section1 h1 span {
+  background-color: #f4ca33;
+}
+.intro .container .section1 p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.intro .container .section1 #title {
+  width: 60%;
+}
+.intro .container .section1 #bananaBack1, .intro .container .section1 #bananaBack3, .intro .container .section1 #bananaBack2 {
+  position: absolute;
+  width: 58px;
+  right: -25px;
+  top: -35px;
+  rotate: 40deg;
+}
+.intro .container .section1 #bananaBack2 {
+  right: 20px;
+  top: 290px;
+  rotate: 20deg;
+}
+.intro .container .section1 #bananaBack3 {
+  width: 42px;
+  right: 265px;
+  top: 240px;
+  rotate: 311deg;
+}
+.intro .container .section1 .contact {
+  position: relative;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .container .section1 .contact fieldset {
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(1.5px);
+  border: none;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  padding: 0 50px;
+}
+.intro .container .section1 .contact fieldset legend {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+}
+.intro .container .section1 .contact fieldset form {
+  padding: 1rem;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .container .section1 .contact fieldset form input, .intro .container .section1 .contact fieldset form textarea {
+  font-family: "Roboto";
+  margin: 0.5rem 0;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-left: solid #683230;
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 100%;
+}
+.intro .container .section1 .contact fieldset form input::placeholder, .intro .container .section1 .contact fieldset form textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.intro .container .section1 .contact fieldset form button {
+  background-color: #683230;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: white;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  width: 120px;
+  box-shadow: 2px 4px 4px rgba(80, 38, 37, 0.35);
+  border-radius: 6px;
+}
+.intro .container .section1 .contact fieldset form button:not(:disabled):hover {
+  filter: brightness(130%);
+}
+.intro .container .section1 .contact fieldset form button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+.intro .container .section1 .contact fieldset form button:not(:disabled) {
+  animation: pulse-blue 2s infinite;
+}
+
+.quem-somos, .servicos {
+  background-color: #f8c477;
+  display: flex;
+  color: #683230;
+}
+.quem-somos #family, .servicos #family {
+  display: flex;
+  margin: 20px 200px;
+  position: relative;
+}
+.quem-somos #family img, .servicos #family img {
+  width: 450px;
+}
+.quem-somos #family h1, .servicos #family h1 {
+  font-size: 45px;
+}
+.quem-somos #family p, .servicos #family p {
+  font-weight: 600;
+}
+.quem-somos #family #banana, .servicos #family #banana {
+  position: absolute;
+  width: 180px;
+  bottom: 210px;
+  left: -230px;
+  rotate: 40deg;
+}
+
+footer {
+  display: flex;
+  background-color: #753513;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120px;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div p {
+  margin: 5px 10px;
+}
+
+.servicos {
+  background-color: #753513;
+  justify-content: center;
+}
+.servicos .container {
+  margin: 20px 250px;
+}
+.servicos .serviceslist {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.servicos .serviceslist .title {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+}
+.servicos .serviceslist #banana2 {
+  position: absolute;
+  width: 150px;
+  right: -190px;
+  top: -120px;
+  rotate: 130deg;
+}
+.servicos .serviceslist #banana3 {
+  position: absolute;
+  width: 110px;
+  left: -190px;
+  bottom: -100px;
+  rotate: 190deg;
+}
+.servicos .services {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #a96e3b;
+  border-radius: 50px;
+}
+.servicos .services h3 {
+  color: white;
+}
+.servicos .services .service {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+.servicos .services .service .text h3 {
+  font-weight: 600;
+}
+.servicos .services .service .text p {
+  margin-right: 30px;
+  font-weight: 400;
+}
+.servicos .services .service .icon {
+  margin: 30px;
+}
+.servicos .services .service img {
+  width: 60px;
+}
+
+.FAQ {
+  display: flex;
+  justify-content: center;
+  background-color: #f8c477;
+}
+.FAQ .title {
+  font-weight: 900;
+  font-size: 40px;
+  color: #753513;
+}
+.FAQ .perguntas {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.FAQ .perguntas .pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #753513;
+  border-bottom: solid #753513;
+}
+
+.last {
+  background-color: #ffffff;
+}
+.last .container {
+  margin: 0 200px;
+}
+.last .container .wrapper {
+  display: flex;
+}
+.last .container .wrapper img {
+  width: 500px;
+}
+.last .container .wrapper .title {
+  width: 60%;
+  margin-top: 120px;
+}
+.last .container .wrapper .title h2 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #753513;
+}
+.last .container .wrapper .title p {
+  font-size: 20px;
+  color: #753513;
+  margin-bottom: 75px;
+}
+.last .container .wrapper .title a {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  border: none;
+  display: inline;
+  filter: drop-shadow(0 0 0.15rem #683230);
+  background-color: #683230;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.toTopButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #683230;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-animation: pulse-blue 2s infinite;
+  animation: pulse-blue 2s infinite;
+  transition: 0.4s;
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial Narrow Bold", sans-serif;
+}
+
+.container {
+  margin: 1.25rem 12.5rem;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.slide-in-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.active .label .accordion-toggle {
+  animation: none;
+}
+.active .content {
+  height: auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1256px) {
+  .container {
+    margin: 1.25rem 8.375rem !important;
+  }
+  #last-container {
+    margin: 0 8.375rem !important;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .container {
+    margin: 1.25rem 4rem !important;
+  }
+  #banana,
+  #banana2,
+  #banana3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 1.25rem 4rem !important;
+  }
+  #last-container .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  #last-container .wrapper img {
+    width: 400px;
+  }
+  #last-container .wrapper .title {
+    margin: 0 0 45px 0;
+  }
+}
+@media only screen and (max-width: 956px) {
+  .container {
+    margin: 1.25rem 2rem !important;
+  }
+  #last-container {
+    margin: 0 !important;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .container {
+    margin: 1.25rem 0rem !important;
+  }
+  #family {
+    justify-content: space-evenly;
+  }
+  #family #family-text {
+    margin-right: 10px;
+  }
+  .services {
+    margin: 0rem 2rem;
+  }
+}
+@media only screen and (max-width: 834px) {
+  .section1 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  #title {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  #bananaBack1, .intro .container .section1 #bananaBack2, .intro .container .section1 #bananaBack3 {
+    display: none;
+  }
+  #bananaBack2 {
+    display: none;
+  }
+  #bananaBack3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  #family {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: center;
+  }
+  #family-text {
+    text-align: center !important;
+    margin: 1.25rem 5rem !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  #FAQ-container {
+    margin: 1.25rem 1rem !important;
+  }
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  .services .service {
+    width: 100% !important;
+  }
+  .container {
+    margin: 1.25rem 0rem;
+  }
+  .intro .container {
+    margin: 1.25rem 0rem;
+  }
+  .section1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #title {
+    width: 100%;
+  }
+  .contact {
+    margin-top: 50px;
+  }
+  .contact fieldset legend {
+    font-size: 13px;
+  }
+  .contact fieldset form {
+    width: 200px;
+  }
+  .contact fieldset form input, .intro .container .section1 .contact fieldset form textarea {
+    font-size: 12px;
+  }
+  .contact fieldset form #enviar {
+    width: 100px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .number {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #FAQ-container {
+    margin: 1.25rem 1rem !important;
+  }
+  #family img {
+    width: 300px !important;
+  }
+  #last-container .wrapper img {
+    width: 200px;
+  }
+  .service {
+    justify-content: space-around;
+    text-align: center;
+  }
+  .service h3 {
+    margin-right: 30px;
+  }
+  .container {
+    margin: 10px;
+  }
+  .intro .container {
+    margin: 10px;
+  }
+  .section1 h1 {
+    font-size: 30px;
+  }
+  .section1 p {
+    font-size: 15px;
+  }
+  .section1 #banana,
+  .section1 #banana2,
+  .section1 #banana3 {
+    display: none;
+  }
+  .section1 .contact fieldset legend {
+    font-size: 10px;
+  }
+  .section1 .contact fieldset form {
+    width: 180px;
+  }
+  .section1 .contact fieldset form input, .intro .container .section1 .contact fieldset form textarea {
+    font-size: 10px;
+  }
+  .section1 .contact fieldset form #enviar {
+    width: 80px;
+    font-size: 10px;
+  }
+  .quem-somos .container, .servicos .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quem-somos .container h1, .servicos .container h1 {
+    font-size: 30px;
+  }
+  .quem-somos .container p, .servicos .container p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .quem-somos .container img, .servicos .container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .quem-somos .container #banana, .servicos .container #banana {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    rotate: 0;
+  }
+  .servicos .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicos .container h1 {
+    font-size: 30px;
+  }
+  .servicos .container p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .servicos .container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .servicos .container #banana {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    rotate: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

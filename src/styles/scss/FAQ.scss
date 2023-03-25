@@ -1,0 +1,22 @@
+.FAQ{
+    display: flex;
+    justify-content: center;
+    background-color: #f8c477;
+    .title{
+        font-weight: 900;
+        font-size: 40px;
+        color: #753513;
+    }
+    .perguntas{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        .pergunta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #753513;
+            border-bottom: solid #753513;
+        }
+    }
+}

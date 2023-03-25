@@ -1,0 +1,70 @@
+.servicos{
+    @extend .quem-somos;
+    .container{
+        margin: 20px 250px;
+    }
+    background-color: #753513;
+    justify-content: center;
+    .serviceslist{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        .title{
+            color: white;
+            font-family: Roboto;
+            font-size: 40px;
+        }
+        #banana2{
+            position: absolute;
+            width: 150px;
+            right: -190px;
+            top: -120px;
+            rotate: 130deg;
+        }
+        #banana3{
+            position: absolute;
+            width: 110px;
+            left: -190px;
+            bottom: -100px;
+            rotate: 190deg;
+        }
+    }
+    .services{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #a96e3b;
+        border-radius: 50px;
+        h3{
+            color: white;
+        }
+        
+        .service{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            color: white;
+            .text{
+                h3{
+                    font-weight: 600;
+                }
+                p{
+                    margin-right: 30px;
+                    font-weight: 400;
+                }
+            }
+            
+            .icon{
+                margin: 30px;
+            }
+            img{
+                width: 60px;
+            }
+        }
+    }
+   
+}

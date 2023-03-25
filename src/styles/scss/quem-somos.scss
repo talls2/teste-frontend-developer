@@ -1,0 +1,26 @@
+.quem-somos{
+    background-color: #f8c477;
+    display: flex;
+    color: #683230;
+    #family{
+        display: flex;
+        margin: 20px 200px ;
+        position: relative;
+        img{
+            width: 450px;
+        }
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-weight: 600;
+        }
+        #banana{
+            position: absolute;
+            width: 180px;
+            bottom: 210px;
+            left: -230px;
+            rotate: 40deg
+        }
+    }
+}
