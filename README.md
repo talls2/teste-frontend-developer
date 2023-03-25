@@ -6,6 +6,8 @@ Resolução do teste da Ellos Design para vaga de estágio como desenvolvedor fu
 
 Gostaria de iniciar dizendo que me diverti muito no desenvolvimento do projeto, encarando também como um desafio para mim mesmo, me tirando um pouco da zona de conforto em algumas situações, como por exemplo: Fazer o css "puro" com SASS quando consigo fazer Landing Pages muito mais rapidamente com frameworks CSS, de qualquer forma, obrigado pelo desafio!
 
+A versão do PHP utilizada foi "8.0.1", caso haja algum erro na execução, favor utilizar essa versão!
+
 Como exemplo, desenvolvi um site institucional para a empresa fictícia "DK banana's", a empresa do personagem fictício "Donkey Kong", com design baseado no [wireframe fornecido para o teste](https://github.com/rafaeldiehl/teste-frontend-developer/blob/master/design/wireframe.png).
 
 <h2 id="tecnologias">Tecnologias utilizadas</h2>
@@ -21,7 +23,7 @@ As tecnologias usados no projeto foram:
 
 <h3 id="backend">Backend</h3>
 
-- [PHP](https://www.php.net).
+- [PHP](https://www.php.net). (8.0.1) 
 - [MAMP](https://www.mamp.info/en/windows/).
 
 <h3 id="banco">Banco de Dados</h3>
